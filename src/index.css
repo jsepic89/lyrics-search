@@ -1,0 +1,157 @@
+body {
+  background-color: #fafafa;
+}
+header {
+  background-color: #4e87ad;
+  margin: auto;
+  max-width: 1000px;
+  width: 90%;
+  text-align: center;
+  padding: 3rem;
+  color: white;
+  font-size: 2.4rem;
+  font-family: 'Lobster', sans-serif;
+}
+legend {
+  text-align: center;
+  margin-bottom: 2rem ;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+main, form  {
+  margin: 5rem auto 0 auto;
+  max-width: 1000px;
+  width: 90%;
+  padding: 3rem;
+  background-color: white;
+  box-shadow: -1px 15px 62px -35px rgba(0,0,0,0.96);
+  -webkit-box-shadow: -1px 15px 62px -35px rgba(0,0,0,0.96);
+  -moz-box-shadow: -1px 15px 62px -35px rgba(0,0,0,0.96);
+  border-radius: .8rem;
+}
+
+
+@media (min-width: 768px) {
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+form label {
+  display: block;
+  margin: 1rem 0;
+  color: #71717a;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  form label {
+    margin: .5rem 0;
+  }
+}
+
+form input[type="text"] {
+  width: 100%;
+  border-radius: .3rem;
+  border: 1px solid #cbd5e1;
+  padding: .5rem
+}
+form input[type="submit"] {
+  background-color: #4e87ad;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  padding: .8rem;
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+}
+form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #11476b;
+}
+
+
+.warning {
+  background-color: #cc352d;
+  border-radius: .3rem;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  width: 70%;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+.lyrics {
+  white-space: pre;
+}
+
+.spinner {
+  margin: 40px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  margin: 2px;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
